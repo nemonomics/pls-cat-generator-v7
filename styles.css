@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.container {
+    position: relative;
+    border: 2px solid black;
+    width: 100%; /* Adjust width as per your layout */
+    max-width: 384px; /* Set a maximum width */
+    height: auto; /* Allow height to adjust */
+    margin-top: 20px; /* Adjust as needed */
+    transform: scale(0.75); /* Shrink container by 25% */
+    transform-origin: top left; /* Ensure scaling origin is top left */
+}
+
+canvas {
+    display: block;
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px; /* Increased padding for buttons */
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#backgroundUpload {
+    display: block;
+    margin: 10px auto; /* Center horizontally */
+    margin-bottom: 10px; /* Space between upload and buttons */
+    padding: 10px 20px; /* Same padding as other buttons */
+    font-size: 14px; /* Same font size as other buttons */
+}
